@@ -1,0 +1,155 @@
+/*estilos generales de la pagina*/
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+/*estilos del contenedor del juego*/
+.container {
+    background-color: skyblue;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*estilos del titulo*/
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*estilos del área de juego*/
+#game-area {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/*estilos de la operación*/
+#operation {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/*estilos del input para la resupuesta*/
+#answer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/*estilos del boton de comprobar*/
+#submit-answer {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/*estilos de*/
+#submit-answer:hover {
+    background-color: #0056b3;
+}
+
+/*estilos del resultado*/
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para respuesta correcta */
+#result.correct {
+    color: green;
+}
+
+/* Estilos para respuesta incorrecta */
+#result.incorrect {
+    color: red;
+}
+
+/* Estilos para mensaje de advertencia (si es necesario) */
+#result.warning {
+    color: orange;
+}
+
+/*estilos de los controles*/
+#controls button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/*estilos de los botones de las operaciones*/
+#addition-btn { background-color: #28a745; color: white; }
+#subtraction-btn { background-color: #dc3545; color: white; }
+#multiplication-btn { background-color: #ffc107; color: #333; }
+#division-btn { background-color: #17a2b8; color: white; }
+
+/*estilo de la puntuación*/
+#controls p#score {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/*estilos del boton de cambio de color*/
+#cambiarColorBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#cambiarColorBtn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Media query para pantallas más pequeñas (ej: móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #operation {
+        font-size: 1.2em;
+    }
+
+    #controls button {
+        font-size: 0.85em;
+        padding: 8px 12px;
+        margin: 3px;
+        min-width: auto; /* Permite que los botones se encojan más */
+        flex-grow: 0; /* Evita que crezcan demasiado en pantallas pequeñas */
+        width: calc(50% - 6px); /* Dos botones por línea con un pequeño margen */
+    }
+
+    #controls p#score {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Aprende Matemáticas Jugando!</title>
+    <!--Conexión con el archivo de CSS-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!--Imagen lado izquierdo del área izquierda del juego-->
+  <img src="./1-removebg-preview.png" alt="imagen" width="300px" height="500px">
+    <!--Contenedor de toda la estructura-->
+    <div class="container">
+      <h1>¡Aprende Matemáticas Jugando!</h1>
+      <!--Contenedor de toda la estructura del juego-->
+      <div id="game-area">
+        <p id="operation"></p>
+        <input type="number" id="answer" placeholder="Tu respuesta">
+        <button id="submit-answer">Comprobar</button>
+        <p id="result"></p>
+      </div>
+      <!--Contenedor de los controles-->
+      <div id="controls">
+        <button id="addition-btn">Sumar</button>
+        <button id="subtraction-btn">Restar</button>
+        <button id="multiplication-btn">Multiplicar</button>
+        <button id="division-btn">Dividir</button>
+        <p id="score">Puntuación: 0</p>
+      </div>
+      <!--Controlador de música-->
+      <audio controls src="./Mix música para estudiar con niños  preescolar - música para estudiar matemáticas_español(MP3_128K).mp3"></audio>
+      <!--Botono que cambia el color del background-->
+      <button id="cambiarColorBtn">Cambiar Color</button>
+    </div>
+  <!--Imagen lado izquierdo del área izquierda del juego-->
+  <img src="./2-removebg-preview.png" alt="imagen" width="300px" height="500px">
+  <!--Conexión con el archivo de JavaScript-->
+  <script src="index.js"></script>
+</body>
+</html>
